@@ -1,5 +1,6 @@
 dependencies {
   implementation project(":controller:client")
+  implementation project(":controller:test")
 
   compileOnly "javax.servlet:javax.servlet-api:3.1.0"
 
