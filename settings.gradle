@@ -1,5 +1,11 @@
 rootProject.name = 'colon-server'
 
 include ':app'
+include ':app:common'
 include ':app:debug'
 include ':app:prod'
+
+include ':controller'
+include ':controller:common'
+include ':controller:test'
+include ':controller:client'

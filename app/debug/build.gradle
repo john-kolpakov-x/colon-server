@@ -1,5 +1,7 @@
 dependencies {
 
+  implementation project(":app:common")
+
   implementation "org.springframework.boot:spring-boot:$springBootVersion"
   implementation "org.springframework.boot:spring-boot-starter-websocket:$springBootVersion"
   implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
