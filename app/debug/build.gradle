@@ -1,13 +1,22 @@
 dependencies {
 
+  implementation "org.springframework.boot:spring-boot:$springBootVersion"
+  implementation "org.springframework.boot:spring-boot-starter-websocket:$springBootVersion"
+  implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+  implementation "org.springframework.boot:spring-boot-starter-tomcat:$springBootVersion"
+
   implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
   testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion") {
     exclude group: 'junit', module: 'junit'
   }
 
   implementation "org.springframework.boot:spring-boot-starter-websocket:$springBootVersion"
-  implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springBootVersion"
+  //implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springBootVersion"
 
   implementation "org.postgresql:postgresql:$postgresVersion"
   implementation "com.zaxxer:HikariCP:$hikariVersion"
+
+  implementation "org.springframework:spring-aop:$springVersion"
+  implementation 'org.aspectj:aspectjweaver:1.9.9.1'
+
 }

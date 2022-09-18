@@ -87,8 +87,8 @@ subprojects {
     ext.lombokVersion = "1.18.22"
     ext.liquibaseVersion = "3.8.0"
 
-    ext.springBootVersion = "2.2.0.RELEASE"
-    ext.springVersion = "2.7.3"
+    ext.springVersion = "5.3.22"
+    ext.springBootVersion = "2.7.3"
 
     ext.testNgVersion = "7.4.0"
     ext.assertjVersion = "3.12.2"
