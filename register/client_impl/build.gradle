@@ -1,0 +1,12 @@
+dependencies {
+  implementation project(":register:client_meta")
+  implementation project(":register:pg-db-client")
+  testImplementation project(":register:common_for_tests")
+
+  implementation "org.springframework:spring-context:$springVersion"
+  testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion") {
+    exclude group: 'junit', module: 'junit'
+  }
+
+  implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisSpringBootStarterVersion"
+}

@@ -1,0 +1,7 @@
+dependencies {
+
+  implementation project(":config:meta")
+
+  implementation "org.springframework:spring-context:$springVersion"
+
+}

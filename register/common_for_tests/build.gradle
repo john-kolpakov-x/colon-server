@@ -1,0 +1,15 @@
+dependencies {
+  implementation project(":register:common")
+  implementation project(":register:pg-db-client")
+  implementation project(":config:debug")
+
+  implementation "org.springframework:spring-context:$springVersion"
+  implementation "org.springframework:spring-test:$springVersion"
+  testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion") {
+    exclude group: 'junit', module: 'junit'
+  }
+
+  implementation "org.testng:testng:$testNgVersion"
+  implementation "org.assertj:assertj-core:$assertjVersion"
+
+}

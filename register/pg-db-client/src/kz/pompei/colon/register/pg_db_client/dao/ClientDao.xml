@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--suppress SqlNoDataSourceInspection -->
+<mapper namespace="kz.pompei.colon.register.pg_db_client.dao.ClientDao">
+
+  <select id="selectClientRecordById" resultType="kz.pompei.colon.register.pg_db_client.model.ClientRecord"><![CDATA[
+    select *
+    from client.client
+    where id = #{clientId}
+    ]]></select>
+
+</mapper>

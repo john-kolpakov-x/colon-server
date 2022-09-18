@@ -1,0 +1,15 @@
+dependencies {
+  implementation project(":config:debug")
+  implementation project(":config:meta")
+
+  implementation "org.springframework:spring-context:$springVersion"
+  implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springBootVersion"
+  implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisSpringBootStarterVersion"
+
+  implementation "org.postgresql:postgresql:$postgresVersion"
+  implementation "com.zaxxer:HikariCP:$hikariVersion"
+
+  implementation "org.liquibase:liquibase-core:$liquibaseVersion"
+  //noinspection SpellCheckingInspection
+  implementation "com.mattbertolini:liquibase-slf4j:1.2.1"
+}
