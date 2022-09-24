@@ -1,9 +1,9 @@
 dependencies {
 
-  implementation project(":app:common")
+  implementation project(":app:common-app")
   implementation project(":register:pg-db-client")
-  implementation project(":config:meta")
-  implementation project(":config:debug")
+  implementation project(":config:meta-config")
+  implementation project(":config:debug-config")
 
   implementation "org.springframework.boot:spring-boot:$springBootVersion"
   implementation "org.springframework.boot:spring-boot-starter-websocket:$springBootVersion"

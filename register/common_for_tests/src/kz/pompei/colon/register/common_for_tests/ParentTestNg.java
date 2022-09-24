@@ -6,7 +6,6 @@ import kz.pompei.colon.server.config.debug.ImporterConfigDebug;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 
-
 @ContextConfiguration(classes = {
   ImporterRegisterCommon.class,
   ImporterDbClient.class,

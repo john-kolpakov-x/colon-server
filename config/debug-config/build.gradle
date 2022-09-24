@@ -1,6 +1,6 @@
 dependencies {
 
-  implementation project(":config:meta")
+  implementation project(":config:meta-config")
 
   implementation "org.springframework:spring-context:$springVersion"
 

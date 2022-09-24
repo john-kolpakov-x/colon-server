@@ -1,6 +1,6 @@
 dependencies {
 
-  implementation project(":controller:common")
+  implementation project(":controller:common-controller")
 
   implementation "org.springframework:spring-context:$springVersion"
   implementation "org.springframework:spring-web:$springVersion"

@@ -1,6 +1,6 @@
 dependencies {
-  implementation project(":config:debug")
-  implementation project(":config:meta")
+  implementation project(":config:debug-config")
+  implementation project(":config:meta-config")
 
   implementation "org.springframework:spring-context:$springVersion"
   implementation "org.springframework.boot:spring-boot-starter-data-jdbc:$springBootVersion"
