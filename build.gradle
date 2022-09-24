@@ -85,7 +85,7 @@ subprojects {
     ext.jacksonVersion = "2.10.4"
     ext.logbackVersion = "1.2.3"
     ext.lombokVersion = "1.18.22"
-    ext.liquibaseVersion = "3.8.0"
+    ext.liquibaseVersion = "4.8.0"
 
     ext.springVersion = "5.3.22"
     ext.springBootVersion = "2.7.3"
