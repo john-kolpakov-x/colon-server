@@ -9,4 +9,6 @@ dependencies {
   }
 
   implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisSpringBootStarterVersion"
+  implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
+  implementation "org.yaml:snakeyaml:$snakeyamlVersion"
 }

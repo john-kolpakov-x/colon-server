@@ -67,7 +67,7 @@ subprojects {
 
 
     ext.mongoSyncDriverVersion = "4.5.1"
-    ext.mybatisSpringBootStarterVersion = "2.1.1"
+    ext.mybatisSpringBootStarterVersion = "2.2.2"
     ext.okhttpVersion = "3.9.0"
     ext.poiVersion = "4.1.1"
     ext.slf4jApiVersion = "1.7.30"
@@ -87,13 +87,17 @@ subprojects {
     ext.lombokVersion = "1.18.22"
     ext.liquibaseVersion = "4.8.0"
 
+    ext.snakeyamlVersion = "1.32"
+    ext.jqueryVersion = "3.6.1"
+
     ext.springVersion = "5.3.22"
-    ext.springBootVersion = "2.7.3"
+    ext.springBootVersion = "2.7.4"
 
     ext.testNgVersion = "7.4.0"
     ext.assertjVersion = "3.12.2"
 
     testImplementation "org.testng:testng:$testNgVersion"
+    testImplementation "org.webjars:jquery:$jqueryVersion"
     testImplementation "org.assertj:assertj-core:$assertjVersion"
 
     compileOnly "org.projectlombok:lombok:$lombokVersion"

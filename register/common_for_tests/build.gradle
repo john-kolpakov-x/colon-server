@@ -10,6 +10,7 @@ dependencies {
   }
 
   implementation "org.testng:testng:$testNgVersion"
+  implementation "org.webjars:jquery:$jqueryVersion"
   implementation "org.assertj:assertj-core:$assertjVersion"
-
+  testImplementation "org.yaml:snakeyaml:$snakeyamlVersion"
 }
