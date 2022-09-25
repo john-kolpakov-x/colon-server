@@ -6,7 +6,7 @@ cd "$(dirname "$0")" || exit 131
 
 NETWORK=debug-colon
 
-for cid in $(podman ps -f "network=$NETWORK" -q) ; do
+for cid in $(podman ps -a -f "network=$NETWORK" -q) ; do
   echo "removing container $cid"
   podman rm -f "$cid"
 done

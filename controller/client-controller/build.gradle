@@ -1,6 +1,7 @@
 dependencies {
 
   implementation project(":controller:common-controller")
+  implementation project(":register:client_meta")
 
   implementation "org.springframework:spring-context:$springVersion"
   implementation "org.springframework:spring-web:$springVersion"

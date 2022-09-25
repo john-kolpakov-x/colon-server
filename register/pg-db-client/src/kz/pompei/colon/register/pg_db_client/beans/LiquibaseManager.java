@@ -20,29 +20,17 @@ public class LiquibaseManager {
   private PgDbConfig dbConfig;
 
   public Connection openConnection() throws SQLException {
-    return DriverManager.getConnection(
-      PgUrlBuilder.on(dbConfig.host(), dbConfig.port(), dbConfig.dbName()).build(),
-      dbConfig.username(),
-      dbConfig.password()
-    );
+    var urlBuilder = PgUrlBuilder.on(dbConfig.host(), dbConfig.port(), dbConfig.dbName());
+    return DriverManager.getConnection(urlBuilder.build(), dbConfig.username(), dbConfig.password());
   }
 
   @SneakyThrows
   public void applyChangeSets() {
     Class.forName("org.postgresql.Driver");
-
     try (var connection = openConnection()) {
-
       var database = new PostgresDatabase();
-
       database.setConnection(new JdbcConnection(connection));
-
-      {
-        new Liquibase(
-          "liquibase/change-log.xml",
-          new ClassLoaderResourceAccessor(), database
-        ).update("");
-      }
+      new Liquibase("liquibase/change-log.xml", new ClassLoaderResourceAccessor(), database).update("");
     }
   }
 

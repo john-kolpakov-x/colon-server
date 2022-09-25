@@ -12,6 +12,14 @@ public class PgUrlBuilder {
   private final int    port;
   private final String dbName;
 
+  private String schema = "public";
+
+  @SuppressWarnings("unused")
+  public PgUrlBuilder schema(String schema) {
+    this.schema = schema;
+    return this;
+  }
+
   public static PgUrlBuilder on(String host, int port, String dbName) {
     return new PgUrlBuilder(host, port, dbName);
   }
@@ -23,7 +31,7 @@ public class PgUrlBuilder {
                             .map(s -> s + ":" + port)
                             .collect(joining(","));
 
-    return "jdbc:postgresql://" + hostPort + "/" + dbName;
+    return "jdbc:postgresql://" + hostPort + "/" + dbName + "?currentSchema=" + schema;
   }
 
 }

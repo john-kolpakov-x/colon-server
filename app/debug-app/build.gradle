@@ -5,6 +5,9 @@ dependencies {
   implementation project(":config:meta-config")
   implementation project(":config:debug-config")
 
+  implementation project(":register:client_impl")
+  implementation project(":register:client_meta")
+
   implementation "org.springframework.boot:spring-boot:$springBootVersion"
   implementation "org.springframework.boot:spring-boot-starter-websocket:$springBootVersion"
   implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
