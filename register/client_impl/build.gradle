@@ -1,6 +1,8 @@
 dependencies {
   implementation project(":register:client_meta")
   implementation project(":register:pg-db-client")
+  implementation project(":model:client")
+
   testImplementation project(":register:common_for_tests")
 
   implementation "org.springframework:spring-context:$springVersion"
@@ -11,4 +13,6 @@ dependencies {
   implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisSpringBootStarterVersion"
   implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
   implementation "org.yaml:snakeyaml:$snakeyamlVersion"
+
+  testImplementation "kz.greetgo.util:greetgo.util:$greetgoUtilVersion"
 }

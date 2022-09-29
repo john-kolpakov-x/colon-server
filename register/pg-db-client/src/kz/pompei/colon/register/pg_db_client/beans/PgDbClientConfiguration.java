@@ -20,7 +20,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@SuppressWarnings("SpringFacetCodeInspection")
 @EnableTransactionManagement
 @MapperScan(basePackageClasses = ImporterDao.class)
 @org.springframework.context.annotation.Configuration

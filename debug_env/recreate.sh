@@ -34,3 +34,7 @@ OP="$OP        -v $PG_DATA_DIR:/var/lib/postgresql/data"
 OP="$OP        -v $PWD/pg-init:/docker-entrypoint-initdb.d"
 OP="$OP        -d"
 podman run $OP "$IMAGE" docker-entrypoint.sh -c max-connections=800
+
+
+cd ..
+./gradlew prepareDb

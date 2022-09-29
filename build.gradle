@@ -38,47 +38,9 @@ subprojects {
   task allDeps(type: DependencyReportTask) {}
 
   dependencies {
-    ext.apacheTikaVersion = "1.24.1"
-    ext.argon2Version = "2.11"
-    ext.caffeineVersion = "2.8.5"
-    ext.clientHttp5Version = "5.1.2"
-    ext.mybpmVersion = "4.3.315"
-
-    ext.greetgoCachedVersion = "0.0.4"
-    ext.greetgoClassScannerVersion = "2.0.4"
-    ext.greetgoConfVersion = "2.0.2"
-    ext.greetgoEmailVersion = "1.0.6"
-    ext.greetgoFileStorageVersion = "2.2.0"
-    ext.greetgoKafkaVersion = "2.3.6"
-    ext.greetgoLoggingVersion = "0.1.4"
-    ext.greetgoMsOfficeVersion = "0.5.8"
-    ext.greetgoSchedulerVersion = "3.1.0"
-    ext.greetgoSecurityVersion = "1.1.5"
-    ext.greetgoSpringVersion = "0.0.7"
-    ext.greetgoNumTranslatorVersion = "0.0.3"
-
-    ext.elasticsearchClientVersion = "7.17.0"
-    ext.groovyVersion = "3.0.9"
-    ext.jadlerVersion = "1.3.0"
-    ext.jbossResteasyVersion = "3.9.0.Final"
-    ext.jetbrainsAnnotationsVersion = "17.0.0"
-    ext.jettyVersion = '9.4.0.v20161208'
-    ext.keycloakVersion = "7.0.0"
-
-
-    ext.mongoSyncDriverVersion = "4.5.1"
     ext.mybatisSpringBootStarterVersion = "2.2.2"
-    ext.okhttpVersion = "3.9.0"
-    ext.poiVersion = "4.1.1"
-    ext.slf4jApiVersion = "1.7.30"
-    ext.firebaseAdminVersion = '6.8.1'
-    ext.owaspEncoderVersion = "1.2.3"
 
-    ////////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////////
-
-    ext.greetgoUtilVersion = "1.0.3"
+    ext.greetgoUtilVersion = "0.1.3"
 
     ext.postgresVersion = "42.3.7"
     ext.hikariVersion = "5.0.1"

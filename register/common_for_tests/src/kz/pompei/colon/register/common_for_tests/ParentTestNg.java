@@ -9,7 +9,6 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 @ContextConfiguration(classes = {
   ImporterRegisterCommon.class,
   ImporterDbClient.class,
-  ImporterDbClient.class,
   ImporterConfigDebug.class,
 })
 public abstract class ParentTestNg extends AbstractTestNGSpringContextTests {}

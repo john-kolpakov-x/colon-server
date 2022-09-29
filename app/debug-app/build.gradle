@@ -27,3 +27,9 @@ dependencies {
   implementation 'org.aspectj:aspectjweaver:1.9.9.1'
 
 }
+
+task prepareDb(type: JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  //noinspection GroovyAccessibility
+  mainClass = 'kz.pompei.colon.server.debug.app.PrepareDbLauncher'
+}
