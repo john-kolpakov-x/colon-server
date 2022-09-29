@@ -1,4 +1,4 @@
-package kz.pompei.colon.register.pg_db_client.model;
+package kz.pompei.colon.register.db_client_pg.model;
 
 public class ClientRecord {
   public String id;

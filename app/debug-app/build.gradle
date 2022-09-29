@@ -1,7 +1,7 @@
 dependencies {
 
   implementation project(":app:common-app")
-  implementation project(":register:pg-db-client")
+  implementation project(":register:db-client-pg")
   implementation project(":config:meta-config")
   implementation project(":config:debug-config")
 

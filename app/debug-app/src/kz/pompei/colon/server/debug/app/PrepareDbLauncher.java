@@ -1,6 +1,6 @@
 package kz.pompei.colon.server.debug.app;
 
-import kz.pompei.colon.register.pg_db_client.beans.PrepareDb;
+import kz.pompei.colon.register.db_client_pg.beans.PrepareDb;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

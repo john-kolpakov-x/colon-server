@@ -1,6 +1,6 @@
 dependencies {
   implementation project(":register:common-register")
-  implementation project(":register:pg-db-client")
+  implementation project(":register:db-client-pg")
   implementation project(":config:debug-config")
 
   implementation "org.springframework:spring-context:$springVersion"

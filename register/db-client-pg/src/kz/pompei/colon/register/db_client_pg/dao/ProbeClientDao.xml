@@ -1,9 +1,9 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--suppress SqlNoDataSourceInspection -->
-<mapper namespace="kz.pompei.colon.register.pg_db_client.dao.ProbeClientDao">
+<mapper namespace="kz.pompei.colon.register.db_client_pg.dao.ProbeClientDao">
 
-  <select id="selectClientRecordById" resultType="kz.pompei.colon.register.pg_db_client.model.ClientRecord"><![CDATA[
+  <select id="selectClientRecordById" resultType="kz.pompei.colon.register.db_client_pg.model.ClientRecord"><![CDATA[
     select *
     from client.client
     where id = #{clientId}

@@ -1,9 +1,9 @@
-package kz.pompei.colon.register.pg_db_client.beans;
+package kz.pompei.colon.register.db_client_pg.beans;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import kz.pompei.colon.register.pg_db_client.etc.PgUrlBuilder;
+import kz.pompei.colon.register.db_client_pg.etc.PgUrlBuilder;
 import kz.pompei.colon.server.config.meta.PgDbConfig;
 import liquibase.Liquibase;
 import liquibase.database.core.PostgresDatabase;

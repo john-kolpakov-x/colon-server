@@ -1,10 +1,10 @@
-package kz.pompei.colon.register.pg_db_client.beans;
+package kz.pompei.colon.register.db_client_pg.beans;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import javax.sql.DataSource;
-import kz.pompei.colon.register.pg_db_client.dao.ImporterDao;
-import kz.pompei.colon.register.pg_db_client.etc.PgUrlBuilder;
+import kz.pompei.colon.register.db_client_pg.dao.ImporterDao;
+import kz.pompei.colon.register.db_client_pg.etc.PgUrlBuilder;
 import kz.pompei.colon.server.config.meta.PgDbConfig;
 import lombok.SneakyThrows;
 import org.apache.ibatis.logging.slf4j.Slf4jImpl;

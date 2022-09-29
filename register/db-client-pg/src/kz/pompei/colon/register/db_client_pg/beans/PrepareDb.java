@@ -1,4 +1,4 @@
-package kz.pompei.colon.register.pg_db_client.beans;
+package kz.pompei.colon.register.db_client_pg.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

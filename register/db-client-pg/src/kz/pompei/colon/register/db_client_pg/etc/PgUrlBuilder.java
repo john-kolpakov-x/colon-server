@@ -1,4 +1,4 @@
-package kz.pompei.colon.register.pg_db_client.etc;
+package kz.pompei.colon.register.db_client_pg.etc;
 
 import java.util.Arrays;
 import lombok.RequiredArgsConstructor;

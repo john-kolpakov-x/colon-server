@@ -9,7 +9,7 @@ include ':controller:common-controller'
 include ':controller:test-controller'
 include ':controller:client-controller'
 
-include ':register:pg-db-client'
+include ':register:db-client-pg'
 include ':register:client_meta'
 include ':register:client_impl'
 include ':register:common-register'

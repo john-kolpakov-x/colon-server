@@ -1,6 +1,6 @@
 dependencies {
   implementation project(":register:client_meta")
-  implementation project(":register:pg-db-client")
+  implementation project(":register:db-client-pg")
   implementation project(":model:client")
 
   testImplementation project(":register:common_for_tests")

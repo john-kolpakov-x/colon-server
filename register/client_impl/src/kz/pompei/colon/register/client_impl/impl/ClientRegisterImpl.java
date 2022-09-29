@@ -3,11 +3,12 @@ package kz.pompei.colon.register.client_impl.impl;
 import kz.pompei.colon.model.client.ClientRecord;
 import kz.pompei.colon.register.client_impl.dao.ClientDao;
 import kz.pompei.colon.register.client_meta.ClientRegister;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-//@MapperScan(basePackageClasses = ClientDao.class)
+@MapperScan(basePackageClasses = ClientDao.class)
 public class ClientRegisterImpl implements ClientRegister {
 
   @Autowired
