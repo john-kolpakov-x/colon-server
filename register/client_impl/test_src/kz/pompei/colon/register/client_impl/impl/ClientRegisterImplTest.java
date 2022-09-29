@@ -2,6 +2,7 @@ package kz.pompei.colon.register.client_impl.impl;
 
 import kz.greetgo.util.RND;
 import kz.pompei.colon.model.client.ClientRecord;
+import kz.pompei.colon.register.client_impl.dao.ClientDao;
 import kz.pompei.colon.register.client_impl.test_dao.ClientTestDao;
 import kz.pompei.colon.register.client_meta.ClientRegister;
 import kz.pompei.colon.register.common_for_tests.ParentTestNg;
@@ -14,13 +15,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ContextConfiguration(classes = ClientRegisterImpl.class)
 @MapperScan(basePackageClasses = ClientTestDao.class)
+@MapperScan(basePackageClasses = ClientDao.class)
 public class ClientRegisterImplTest extends ParentTestNg {
 
+  //region Autowired fields
   @Autowired
   private ClientRegister clientRegister;
 
   @Autowired
   private ClientTestDao clientTestDao;
+  //endregion
 
 
   @Test
