@@ -1,6 +1,7 @@
 dependencies {
   implementation project(":controller:client-controller")
   implementation project(":controller:test-controller")
+  implementation project(":controller:company-controller")
   implementation project(":register:db-client-pg")
 
   compileOnly "javax.servlet:javax.servlet-api:3.1.0"

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+  <changeSet author="pompei" id="creates-schema-com">
+    <sql endDelimiter=";;" splitStatements="true"> <![CDATA[
+      create schema if not exists com
+    ]]></sql>
+  </changeSet>
+
+  <changeSet author="pompei" id="creates-table-company">
+    <sql endDelimiter=";;" splitStatements="true"> <![CDATA[
+      create table com.company (
+        id           varchar(20),
+        name         varchar(300),
+
+        primary key (id)
+      )
+    ]]></sql>
+  </changeSet>
+
+  <changeSet author="pompei" id="creates-table-person">
+    <sql endDelimiter=";;" splitStatements="true"> <![CDATA[
+      create table com.person (
+        id           varchar(20),
+        surname      varchar(300),
+        name         varchar(300),
+        patronymic   varchar(300),
+
+        password     varchar(300),
+
+        primary key (id)
+      )
+    ]]></sql>
+  </changeSet>
+
+  <changeSet author="pompei" id="creates-table-session">
+    <sql endDelimiter=";;" splitStatements="true"> <![CDATA[
+      create table com.session (
+        id           varchar(20),
+        person_id    varchar(20),
+        actual       bool,
+
+        primary key (id)
+      )
+    ]]></sql>
+  </changeSet>
+
+</databaseChangeLog>

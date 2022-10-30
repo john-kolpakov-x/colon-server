@@ -8,10 +8,13 @@ include ':controller'
 include ':controller:common-controller'
 include ':controller:test-controller'
 include ':controller:client-controller'
+include ':controller:company-controller'
 
 include ':register:db-client-pg'
 include ':register:client_meta'
 include ':register:client_impl'
+include ':register:company_meta'
+include ':register:company_impl'
 include ':register:common-register'
 include ':register:common_for_tests'
 
@@ -21,3 +24,4 @@ include ':config:prod-config'
 
 include ':model'
 include ':model:client'
+include ':model:company'

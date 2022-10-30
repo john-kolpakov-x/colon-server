@@ -1,0 +1,18 @@
+dependencies {
+  implementation project(":register:company_meta")
+  implementation project(":register:db-client-pg")
+  implementation project(":model:company")
+
+  testImplementation project(":register:common_for_tests")
+
+  implementation "org.springframework:spring-context:$springVersion"
+  testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion") {
+    exclude group: 'junit', module: 'junit'
+  }
+
+  implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisSpringBootStarterVersion"
+  implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
+  implementation "org.yaml:snakeyaml:$snakeyamlVersion"
+
+  testImplementation "kz.greetgo.util:greetgo.util:$greetgoUtilVersion"
+}

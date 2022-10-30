@@ -1,0 +1,10 @@
+dependencies {
+
+  implementation project(":controller:common-controller")
+  implementation project(":register:company_meta")
+  implementation project(':model:company')
+
+  implementation "org.springframework:spring-context:$springVersion"
+  implementation "org.springframework:spring-web:$springVersion"
+
+}
